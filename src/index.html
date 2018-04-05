@@ -1,14 +1,40 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Mydashboard</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation-flex.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,500">
 </head>
 <body>
   <app-root></app-root>
 </body>
+<!-- <script>
+  var config = {
+    apiKey: "AIzaSyCF2WNLWKyIFbP9miDGReji7CbLkc_787k",
+    authDomain: "mydashboard-5b31f.firebaseapp.com",
+    databaseURL: "https://mydashboard-5b31f.firebaseio.com",
+    projectId: "mydashboard-5b31f",
+    storageBucket: "mydashboard-5b31f.appspot.com",
+    messagingSenderId: "175656638845"
+  };
+  firebase.initializeApp(config);
+
+  var rootRef = firebase.database().ref();
+
+  var usernameInput = document.getElementById('username');
+  var textInput = document.getElementById('text');
+  var postButton = document.getElementById('post');
+  postButton.addEventListener("click", function () {
+    var msgUser = usernameInput.value;
+    var msgText = textInput.value;
+    rootRef.set(msgUser + " says: " + msgText);
+    textInput.value = "";
+  });
+</script> -->
 </html>
